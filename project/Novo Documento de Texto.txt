@@ -1,0 +1,10 @@
+1. Ler enunciado;
+2. Fazer estrutura base;
+   2.1. Pagina HTML5;
+   2.2. Com Bootstrap;
+   2.3. Cabeçalho;
+3. Adicionar um filme à vossa pagina;
+4. Adicionar ficheiro JS;
+4.1. Programar evento de carregamento da pagina para chamar função;
+4.2. Programar função 
+d

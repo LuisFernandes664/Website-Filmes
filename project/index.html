@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta name="description" content="Pagina de Filmes HTML, CSS e JavaScript">
+    <meta name="keywords" content="filmes, series, HTML, CSS">
+    <meta name="author" content="Luís Miguel Abreu Fernandes">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <title>IMDB</title>
+</head>
+<body>
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <h5 class="text-white h4">Collapsed content</h5>
+        <span class="text-muted">Toggleable via the navbar brand.</span>
+      </div>
+    </div>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark justify-content-between">
+        <a class="navbar-brand text-white" href="" onclick="inicio()"> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-film" viewBox="0 0 16 16">
+            <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0v6h8V1H4zm8 8H4v6h8V9zM1 1v2h2V1H1zm2 3H1v2h2V4zM1 7v2h2V7H1zm2 3H1v2h2v-2zm-2 3v2h2v-2H1zM15 1h-2v2h2V1zm-2 3v2h2V4h-2zm2 3h-2v2h2V7zm-2 3v2h2v-2h-2zm2 3h-2v2h2v-2z"/>
+            </svg>
+        <span class="logo-movies">Movies</span></a>
+        
+          <form class="form-inline " id="form"><!--form-inline-->
+            <input class="form-control mr-sm-2" type="search" id="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" data-toggle="modal" </button>Pesquisar</button> <!--data-target="#exampleModalCenter"-->
+            <!--<button data-toggle="modal" data-target="#exampleModalCenter" type="button">Ola</button>-->
+          </form>
+        
+    </nav>
+      <div class="row" id="main"><!--class="col-3 row filme" id="main"-->
+        <div class="card">
+          <div class="espaco_img" style="height: auto;">
+            <img class="imagem" src="" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Titulo</h5>
+            <p class="card-text" style="height: 200px;">paragrafo</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">data / rating </small>
+          </div>
+        </div>
+      </div>
+
+      <!--MODAL   modal-dialog modal-xl-->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Trocar</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img src="" alt="">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+    <!--paginação-->
+      <div class="paginacao">
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" id="anterior" href="#">Anterior</a></li>
+            <!--<li class="page-item disabled"><a class="page-link disabled" id="numPage" href="#">1</a></li>-->
+            <li class="page-item"><a class="page-link" id="prox" href="#">Seguinte</a></li>
+        </ul>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script src="index.js"></script>
+</body>
+</html>
